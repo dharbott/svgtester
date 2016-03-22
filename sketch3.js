@@ -61,13 +61,13 @@ function setup() {
 	//noLoop();
 
 
-	image(img, 0, 0);
 }
 	function preload() {
 		img = loadImage("test.svg");
 	}
 
 function draw() {
+	
 	
 	alternateColor = true;
 	
@@ -133,8 +133,8 @@ function draw() {
 	
 	
 			
-	//velocityv.add(accelv);
-	//positionv.add(velocityv);
+	velocityv.add(accelv);
+	positionv.add(velocityv);
 	
 	if ((positionv.y > (height*2)) || (positionv.y < 0))
 	{
@@ -224,6 +224,9 @@ function draw() {
 	fill(50);
 	ellipse(x,y,50,50);
 	**/
+	
+	
+	image(img, 0, 0);
 }
 
 
