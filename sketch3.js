@@ -64,7 +64,7 @@ function setup() {
 	image(img, 0, 0);
 }
 	function preload() {
-		img = loadImage("../assets/test.svg");
+		img = loadImage("test.svg");
 	}
 
 function draw() {
