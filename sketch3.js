@@ -81,8 +81,8 @@ function draw() {
 
 	
 	var count = 7;//11;
-	var i = 0;
-	//for (var i = 0; i < count * 2; i++)
+	//var i = 0;
+	for (var i = 0; i < count * 2; i++)
 	{		
 		if (alternateColor)
 		{
@@ -94,8 +94,8 @@ function draw() {
 		}
 		
 		alternateColor = !alternateColor;
-		
-		arc(donutVector.x, donutVector.y, width*PI, height*PI, i*(PI / count), (i+1)*(PI / count));
+		if ((i % 2) === 0)
+			arc(donutVector.x, donutVector.y, width*PI, height*PI, i*(PI / count), (i+1)*(PI / count));
 		/**
 		triangle ((i-1)*xspacing,0, x, y, i*xspacing, 0);
 		triangle ((i-1)*xspacing,height, x, y, i*xspacing, height);
