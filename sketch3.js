@@ -133,8 +133,8 @@ function draw() {
 	
 	
 			
-	velocityv.add(accelv);
-	positionv.add(velocityv);
+	//velocityv.add(accelv);
+	//positionv.add(velocityv);
 	
 	if ((positionv.y > (height*2)) || (positionv.y < 0))
 	{
